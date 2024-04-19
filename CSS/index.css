@@ -1,0 +1,114 @@
+:root{
+    /* paleta de colores */
+    --color1: #FB7806;
+    --color4: #f2a44c;
+
+    /* fuente */
+    --fuente: "Oswald", sans-serif;
+
+    /* tamaños de pantalla */
+    --celular: 576px;
+    --tablet: 768px;
+    --pc: 1024px;
+}
+
+/* formulario */
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+}
+
+label{
+    font-size: 1rem;
+}
+
+legend{
+    margin-left: 15px;
+    padding: 0 10px;
+    background-color: var(--color4);
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+h1,label,legend{
+    text-transform: uppercase;
+}
+
+form{
+    width: 500px;
+    margin: 3rem auto;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: var(--color4);
+}
+
+input, label{
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+}
+
+input{
+    padding: 4px;
+}
+
+/* boton */
+
+button{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin: 35px auto 35px auto;
+    font-size: 1rem;
+    font-family: var(--fuente);
+    background-color: var(--color4);
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+@media(max-width:768px){
+    form{
+        width: 90%;
+    }
+
+    fieldset{
+        height: 600px;
+    }
+
+    input{
+        padding: 8px;
+    }
+
+    input, label{
+        margin: 18px auto;
+    }
+    button{
+        height: 60px;
+        font-size: 1.5rem;
+    }
+} 
+
+@media(max-width:576px){
+    form{
+        width: 90%;
+    }
+    button{
+        max-width: 90%;
+    }
+}
+
+
+

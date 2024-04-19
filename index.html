@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Registro civil</title>
+</head>
+<body>
+    <!-- nav -->
+    <div class="modal" id="modal">
+        <div class="menu">
+            <h2>menu</h2>
+            <a href="registros.html">lista de registros</a>
+            <a href="index.html">registrador</a>
+            <a href="editarCliente1.html">editar</a>
+            <a href="" class="cerrar">Cerrar</a>
+        </div>
+    </div>
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="btnMenu">
+            <path fill-rule="evenodd" d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm8 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm-3-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+        </svg>                   
+    </nav>
+    <header class="encabezado">
+        <h1>registro civil</h1>
+    </header>
+    <form class="formulario">
+        <fieldset>
+            <legend>registro</legend>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" placeholder="ej: Mauro" required>
+            <div class="divisor"></div>
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" placeholder="ej: Lombardo" required>
+            <div class="divisor"></div>
+            <label for="Fecha">Fecha de Nacimiento</label>
+            <input type="date" name="Fecha" id="Fecha" required>
+            <div class="divisor"></div>
+            <label for="Nacionalidad">Nacionalidad</label>
+            <input type="text" id="Nacionalidad" placeholder="ej: Argentina" required>
+            <div class="divisor"></div>
+            <label for="DNI">DNI</label>
+            <input type="number" name="DNI" id="DNI" min="8000000" placeholder="ej: 30999000" required>
+        </fieldset>
+        <button type="submit" class="btnSubmit">registrar</button>
+    </form>
+    
+    <script  type="module" src="./JS/app.js"></script>
+    <script type="module" src="./JS/modal.js"></script>
+</body>
+</html>

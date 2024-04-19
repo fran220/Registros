@@ -1,0 +1,146 @@
+:root{
+    /* paleta de colores */
+    --color1: #FB7806;
+    --color2: #030F19;
+    --color3: #588273;
+    --color4: #f2a44c;
+    /* colores base */
+    --negro: #252323;
+    --blanco: #ded7d7;
+    --rojo: #c70505;
+    --negroTrans: rgba(0, 0, 0, 0.5);
+    /* fuente */
+    --fuente: "Oswald", sans-serif;
+    /* tamaños de pantalla */
+    --celular: 576px;
+    --tablet: 768px;
+    --pc: 1024px;
+}
+
+/* general */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    background-color: var(--color2);
+    font-family: var(--fuente);
+}
+
+/* nav */
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color2);
+}
+
+svg{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    color: var(--color4);
+}
+
+svg:hover{
+    cursor: pointer;
+    color: var(--color1);
+}
+
+/* modal */
+h2{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+    color: var(--blanco);
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--negroTrans);
+    pointer-events: none;
+    opacity: 0; 
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.menu{
+    background-color: var(--color2);
+    width: 400px;
+    height: 100%;
+    padding: 1rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu a{
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color3);
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.menu a:last-of-type{
+    border-bottom: none;
+}
+
+.menu a:hover{
+    color: var(--color4);
+}
+.menu a:last-of-type:hover{
+    color: var(--rojo);
+}
+
+
+/* clases */
+
+.encabezado{
+    text-align: center;
+    margin: 30px auto;
+    padding: 35px 30px;
+    width: 300px;
+    height: 100px;
+    background-color: var(--color4);
+    border-radius: 15px;
+}
+
+.divisor{
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--negro);
+}
+
+@media(max-width:768px){
+    svg{
+        height: 40px;
+    }
+}
+
+@media(max-width: 576px){
+    .encabezado{
+        width: 300px;
+        height: 60px;
+        padding: 13px; 
+    }
+
+    svg{
+        margin: 0;
+        margin-top: 0.8rem;
+        margin-left: -1rem;
+    }
+}
